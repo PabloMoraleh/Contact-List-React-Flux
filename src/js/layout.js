@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Contact } from "./views/Contact";
+import { AddContact } from "./views/AddContact";
 
 //create your first component
 const Layout = () => {
@@ -24,7 +25,7 @@ const Layout = () => {
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<Contact />} />
-						<Route path="/demo" element={<Demo />} />
+						<Route path="/AddContact" element={<AddContact />} />
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
