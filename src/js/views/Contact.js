@@ -27,7 +27,9 @@ export const Contact = () => {
                                 actions.seeContact(contact)
                                 navigate("/AddContact") 
                             }}></i>
-                            <i className="fa-solid fa-trash"></i>
+                            <i className="fa-solid fa-trash" onClick={() => {
+                                actions.deleteContact(contact.id) 
+                            }}></i>
                             </div>
                         </li>
                     )
