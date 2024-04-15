@@ -12,7 +12,7 @@ export const Contact = () => {
     <div className="contactsCard">
         <ul>
             {
-                store.contacts.length > 0 ? store.contacts.map( (contact) => {
+                store.contacts?.length > 0 ? store.contacts?.map( (contact) => {
                     return (
                         <li className="row" key={contact.id}>
                             <div className="col-md-3"><img style={{width: "150px", height: "150px", objectFit:"cover", borderRadius:"15px"}} src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww"></img></div>
