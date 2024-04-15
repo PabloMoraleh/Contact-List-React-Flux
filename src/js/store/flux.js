@@ -47,7 +47,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((respuesta) => {
             return respuesta.json();
           })
-          .then((data) => getActions().getContact())
+          .then((data) => getActions().getContacts())
           .catch((error) => console.log(error));
       },
 	  	// BORRAR CONTACTOS
